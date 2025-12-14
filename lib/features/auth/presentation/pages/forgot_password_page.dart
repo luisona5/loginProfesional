@@ -62,7 +62,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
       builder: (context, state) {
         final isLoading = state is AuthLoading;
         return Scaffold(
-          appBar: AppBar(title: const Text('Recuperar Contraseña')),
+          appBar: AppBar(title: const Text('Recuperar ContraseÃ±a')),
           body: SafeArea(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(24),
@@ -74,7 +74,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                     const SizedBox(height: 40),
                     Icon(Icons.lock_reset, size: 80, color: Theme.of(context).primaryColor),
                     const SizedBox(height: 24),
-                    const Text('¿Olvidaste tu contraseña?', textAlign: TextAlign.center,
+                    const Text('Olvidaste tu contraseÃ±a?', textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
                     const SizedBox(height: 16),
                     const Text(

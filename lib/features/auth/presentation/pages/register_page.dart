@@ -54,7 +54,7 @@ class _RegisterPageState extends State<RegisterPage> {
             barrierDismissible: false,
             builder: (context) => AlertDialog(
               title: const Text('Cuenta creada'),
-              content: Text('Se ha enviado un correo de confirmación a ${state.email}.'),
+              content: Text('Se ha enviado un correo de confirmacion a ${state.email}.'),
               actions: [
                 TextButton(
                   onPressed: () {
@@ -87,7 +87,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     const SizedBox(height: 20),
                     Icon(Icons.person_add_outlined, size: 80, color: Theme.of(context).primaryColor),
                     const SizedBox(height: 24),
-                    const Text('Regístrate', textAlign: TextAlign.center,
+                    const Text('Registrate', textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
                     const SizedBox(height: 40),
                     AuthTextField(
@@ -108,10 +108,10 @@ class _RegisterPageState extends State<RegisterPage> {
                     const SizedBox(height: 16),
                     AuthTextField(
                       controller: _passwordController,
-                      label: 'Contraseña',
+                      label: 'ContraseÃ±a',
                       prefixIcon: Icons.lock_outline,
                       isPassword: true,
-                      validator: (v) => v == null || v.length < 6 ? 'Mínimo 6 caracteres' : null,
+                      validator: (v) => v == null || v.length < 6 ? 'Minimo 6 caracteres' : null,
                       enabled: !isLoading,
                       onFieldSubmitted: (_) => _handleRegister(),
                     ),
